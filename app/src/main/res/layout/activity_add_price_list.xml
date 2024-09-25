@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.pricelist.AddPriceListActivity">
+
+    <TextView
+        android:id="@+id/tv_add_price_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Tambah Daftar Harga"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nama_varietas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:text="Nama Varietas"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_add_price_list"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_price_list" />
+
+    <EditText
+        android:id="@+id/edt_nama_varietas"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama varietas"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_nama_varietas"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama_varietas" />
+
+    <TextView
+        android:id="@+id/tv_daftar_harga_beli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Harga Beli"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/edt_nama_varietas"
+        app:layout_constraintTop_toBottomOf="@id/edt_nama_varietas" />
+
+    <EditText
+        android:id="@+id/edt_daftar_harga_beli"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan harga beli"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_daftar_harga_beli"
+        app:layout_constraintTop_toBottomOf="@id/tv_daftar_harga_beli" />
+
+    <TextView
+        android:id="@+id/tv_daftar_harga_jual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Harga Jual"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/edt_daftar_harga_beli"
+        app:layout_constraintTop_toBottomOf="@id/edt_daftar_harga_beli" />
+
+    <EditText
+        android:id="@+id/edt_daftar_harga_jual"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan harga jual"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_daftar_harga_jual"
+        app:layout_constraintTop_toBottomOf="@id/tv_daftar_harga_jual" />
+
+    <TextView
+        android:id="@+id/tv_tanggal_ditambahkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tanggal Ditambahkan"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/edt_daftar_harga_jual"
+        app:layout_constraintTop_toBottomOf="@id/edt_daftar_harga_jual" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/tv_tanggal_ditambahkan"
+        app:layout_constraintTop_toBottomOf="@id/tv_tanggal_ditambahkan">
+
+        <Button
+            android:id="@+id/btn_tanggal_ditambahkan"
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/baseline_date_range_24"
+            android:contentDescription="TOMBOL TAMBAH TANGGAL"/>
+
+        <TextView
+            android:id="@+id/tv_label_tanggal_ditambahkan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan tanggal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_price_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Tambah Data"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:backgroundTint="@color/blue"
+        android:textColor="?attr/colorOnSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_tanggal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

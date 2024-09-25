@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_green">#BFFFBF</color>
+    <color name="blue">#0185B1</color>
+    <color name="light_blue">#49BAE0</color>
+    <color name="light_yellow">#E9E055</color>
+    <color name="light_grey">#C5C5C5</color>
+    <color name="light_red">#F8A48E</color>
+    <color name="red">#EF2626</color>
+    <color name="orange">#FF9800</color>
+    <color name="dark_grey">#595959</color>
+    <color name="card_list_color">#272430</color>
+    <color name="color_login_register">#141218</color>
+</resources>

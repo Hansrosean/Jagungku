@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/welcome"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="Pengaturan"
+        android:focusable="true"
+        android:src="@drawable/baseline_settings_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/colorOnBackground"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_show_login_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:text="USER_NAME"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_welcome"
+        app:layout_constraintStart_toEndOf="@id/tv_welcome"
+        app:layout_constraintTop_toTopOf="@+id/tv_welcome" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_filter_menu"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/light_green"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_show_login_user_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title_filter_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cari benih di sini"
+            android:textColor="?attr/colorTertiary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:drawableTint="@color/black"
+            app:drawableEndCompat="@drawable/baseline_search_24"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <GridLayout
+        android:id="@+id/layout_menu_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:rowCount="2"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_filter_menu">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_varieties"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/light_yellow"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/tv_title_menu_varietas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Kelola Varietas"
+                android:textColor="?attr/colorTertiary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:drawableTint="@color/black"
+                app:drawableTopCompat="@drawable/baseline_grass_24" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_factor"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/light_blue"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/tv_title_menu_spk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Kelola SPK"
+                android:textAlignment="center"
+                android:textColor="?attr/colorTertiary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:drawableTint="@color/black"
+                app:drawableTopCompat="@drawable/baseline_insert_chart_outlined_24" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_users"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/light_red"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/tv_title_menu_akun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Kelola Akun"
+                android:textColor="?attr/colorTertiary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:drawableTint="@color/black"
+                app:drawableTopCompat="@drawable/baseline_group_24" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_price_list"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/light_grey"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/tv_title_menu_daftar_Harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Kelola \n Daftar Harga"
+                android:textAlignment="center"
+                android:textColor="?attr/colorTertiary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:drawableTint="@color/black"
+                app:drawableTopCompat="@drawable/baseline_currency_exchange_24" />
+        </com.google.android.material.card.MaterialCardView>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

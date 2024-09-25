@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.dss.evaluation.factorevaluation.EditFactorEvaluationActivity">
+
+    <TextView
+        android:id="@+id/tv_title_edit_evaluation_faktor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Edit Evaluasi Faktor"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label_edit_nama_faktor_in_evaluation_faktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:text="Nama Faktor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_title_edit_evaluation_faktor"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_edit_evaluation_faktor" />
+
+    <EditText
+        android:id="@+id/edt_edit_nama_faktor_in_evaluation_faktor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="NAMA_FAKTOR"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_label_edit_nama_faktor_in_evaluation_faktor"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_edit_nama_faktor_in_evaluation_faktor" />
+
+    <TextView
+        android:id="@+id/tv_label_edit_bobot_faktor_evaluation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Total Evaluasi Faktor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/edt_edit_nama_faktor_in_evaluation_faktor"
+        app:layout_constraintTop_toBottomOf="@id/edt_edit_nama_faktor_in_evaluation_faktor" />
+
+    <EditText
+        android:id="@+id/edt_edit_bobot_faktor_evaluation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan total evaluasi faktor"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_edit_bobot_faktor_evaluation"
+        app:layout_constraintStart_toStartOf="@id/tv_label_edit_bobot_faktor_evaluation"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_edit_bobot_faktor_evaluation">
+
+        <Button
+            android:id="@+id/btn_update_evaluation_faktor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Ubah Data"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_delete_evaluation_faktor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/red"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Hapus Data"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

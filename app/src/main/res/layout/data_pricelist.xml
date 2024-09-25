@@ -1,0 +1,131 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_data_pricelist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="15dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="?attr/cardBackgroundColor"
+    app:cardElevation="6dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="4">
+
+        <TextView
+            android:id="@+id/tv_daftar_harga_nama_varietas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="12dp"
+            android:paddingVertical="13dp"
+            android:paddingHorizontal="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="Nama_Varietas" />
+
+        <ImageView
+            android:id="@+id/img_edit_daftar_harga"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/baseline_edit_24" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0">
+
+            <TextView
+                android:id="@+id/tv_label_harga_beli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp"
+                android:text="Harga Beli :"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_item_daftar_harga_beli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="2dp"
+                android:paddingEnd="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Rp.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0">
+
+            <TextView
+                android:id="@+id/tv_label_harga_jual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp"
+                android:text="Harga Jual :"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_item_daftar_harga_jual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="2dp"
+                android:paddingEnd="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Rp.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_label_tanggal_ditambahkan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp"
+                android:text="Diperbarui :"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_item_tanggal_ditambahkan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="2dp"
+                android:paddingEnd="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="00-00-0000" />
+        </LinearLayout>
+    </GridLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

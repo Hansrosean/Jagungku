@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.dss.factor.AddFactorActivity">
+
+    <TextView
+        android:id="@+id/tv_title_add_faktor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Tambah Faktor"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label_add_kode_faktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:text="Kode Faktor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_title_add_faktor"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_add_faktor" />
+
+    <EditText
+        android:id="@+id/edt_add_kode_faktor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan kode faktor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_label_add_kode_faktor"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_add_kode_faktor" />
+
+    <TextView
+        android:id="@+id/tv_label_add_nama_faktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Nama Faktor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/edt_add_kode_faktor"
+        app:layout_constraintTop_toBottomOf="@id/edt_add_kode_faktor" />
+
+    <EditText
+        android:id="@+id/edt_add_nama_faktor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama faktor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_label_add_nama_faktor"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_add_nama_faktor" />
+
+    <TextView
+        android:id="@+id/tv_label_add_bobot_faktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Bobot Faktor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/edt_add_nama_faktor"
+        app:layout_constraintTop_toBottomOf="@id/edt_add_nama_faktor" />
+
+    <EditText
+        android:id="@+id/edt_add_bobot_faktor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan bobot faktor"
+        android:textSize="20sp"
+        android:inputType="numberDecimal|number"
+        app:layout_constraintStart_toStartOf="@id/tv_label_add_bobot_faktor"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_add_bobot_faktor" />
+
+    <Button
+        android:id="@+id/btn_add_faktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Tambah Faktor"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_add_bobot_faktor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Jagungku</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="user_name">Nama</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="insert_your_user_name">Masukkan nama Anda</string>
+    <string name="insert_your_user_email">Masukkan email Anda</string>
+    <string name="insert_your_user_password">Masukkan password Anda</string>
+    <string name="login">Login</string>
+    <string name="login_success">Login sukses</string>
+    <string name="login_failed">Login gagal</string>
+    <string name="register_success">Register sukses</string>
+    <string name="register_failed">Register gagal</string>
+    <string name="welcome">Selamat datang, </string>
+    <string name="add_data">TAMBAH DATA</string>
+    <string name="email_already_registered">Email sudah terdaftar</string>
+</resources>

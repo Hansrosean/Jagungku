@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.dss.subfactor.AddSubFactorActivity">
+
+    <TextView
+        android:id="@+id/tv_title_add_sub_faktor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Tambah Sub Faktor"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label_add_nama_faktor_in_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:text="Nama Faktor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_title_add_sub_faktor"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_add_sub_faktor" />
+
+    <TextView
+        android:id="@+id/tv_add_nama_faktor_in_sub"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="NAMA_FAKTOR"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_label_add_nama_faktor_in_sub"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_add_nama_faktor_in_sub" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_sub_faktor_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@id/tv_add_nama_faktor_in_sub"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_nama_faktor_in_sub">
+
+        <EditText
+            android:id="@+id/edt_add_nama_sub_faktor_1"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="Sub faktor 1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edt_add_nilai_sub_faktor_1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="nilai"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_sub_faktor_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/linear_layout_sub_faktor_1"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout_sub_faktor_1">
+
+        <EditText
+            android:id="@+id/edt_add_nama_sub_faktor_2"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="Sub faktor 2"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edt_add_nilai_sub_faktor_2"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="nilai"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_sub_faktor_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/linear_layout_sub_faktor_2"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout_sub_faktor_2">
+
+        <EditText
+            android:id="@+id/edt_add_nama_sub_faktor_3"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="Sub faktor 3"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edt_add_nilai_sub_faktor_3"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="nilai"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_data_sub_faktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/blue"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Tambah Sub Faktor"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_sub_faktor_3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

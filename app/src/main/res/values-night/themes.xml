@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Jagungku" parent="Theme.Material3.DayNight">
+        <!-- Customize your dark theme here. -->
+        <item name="colorScheme">@color/color_login_register</item>
+        <item name="colorOnSecondary">@color/light_grey</item>
+        <item name="colorTertiary">@color/dark_grey</item>
+        <item name="colorOnBackground">@color/light_grey</item>
+        <item name="cardBackgroundColor">@color/card_list_color</item>
+    </style>
+</resources>

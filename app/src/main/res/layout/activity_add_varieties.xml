@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.varieties.AddVarietiesActivity">
+
+    <TextView
+        android:id="@+id/tv_add_varieties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tambah Data Varietas"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- add android:windowSoftInputMode="adjustPan" inside tag activity in xml
+         to prevent keyboard hiding the content or view -->
+    <ScrollView
+        android:id="@+id/sv_tambah_varietas"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_varieties">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tambah_varietas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nama_varietas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Varietas"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_nama_varietas"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan nama varietas"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_harga_beli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Harga Beli"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_harga_beli"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan harga beli"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_potensi_hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Potensi Hasil Panen"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/edt_potensi_hasil"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan potensi hasil"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_usia_tanam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Usia Tanam"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_usia_tanam"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan usia tanam"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ketinggian_tanah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Ketinggian Tanah"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_ketinggian_tanah"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan ketinggian tanah"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_kekebalan_hama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kekebalan Hama"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_kekebalan_hama"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan kekebalan hama"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ukuran_tongkol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Ukuran Tongkol"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_ukuran_tongkol"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan ukuran tongkol"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_suhu_udara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Suhu Udara"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_suhu_udara"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan suhu udara"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ph_tanah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="PH Tanah"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_ph_tanah"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan ph tanah"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Tambah Data"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_tambah_varietas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

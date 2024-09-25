@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="15dp"
+    android:backgroundTint="?attr/cardBackgroundColor"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_nama_faktor_in_factor_evaluation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="NAMA FAKTOR" />
+
+    <TextView
+        android:id="@+id/tv_total_bobot_faktor_in_factor_evaluation"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:maxLines="1"
+        android:layout_marginEnd="5dp"
+        android:padding="15dp"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="9.999" />
+</com.google.android.material.card.MaterialCardView>

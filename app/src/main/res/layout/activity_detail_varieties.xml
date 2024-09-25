@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.varieties.DetailVarietiesActivity">
+
+
+    <TextView
+        android:id="@+id/tv_detail_nama_varietas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="NAMA_VARIETAS"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/sv_detail_varietas"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_nama_varietas">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_detail_varietas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_harga_beli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Beli : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_harga_beli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="HARGA_BELI"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_potensi_hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Potensi Hasil Panen : "
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tv_detail_potensi_hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="POTENSI_HASIL"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_usia_tanam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Usia Tanam : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_usia_tanam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="USIA_TANAM"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ketinggian_tanah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Ketinggian Tanah : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_ketinggian_tanah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="KETINGGIAN_TANAH"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_kekebalan_hama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kekebalan Hama : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_kekebalan_hama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="KEKEBALAN_HAMA"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ukuran_tongkol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Ukuran Tongkol : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_ukuran_tongkol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="UKURAN_TONGKOL"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_suhu_udara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Suhu Udara : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_suhu_udara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="SUHU_UDARA"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ph_tanah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="PH Tanah : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_ph_tanah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="PH_TANAH"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_btn_detail_varietas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_detail_varietas">
+
+        <Button
+            android:id="@+id/btn_edit_varietas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Ubah Data"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_hapus_Varietas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/red"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Hapus Data"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
